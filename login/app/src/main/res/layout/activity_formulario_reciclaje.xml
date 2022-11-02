@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".FormularioReciclaje">
+
+    <TextView
+        android:id="@+id/titulo6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="25dp"
+        android:gravity="center"
+        android:text="FORMULARIO"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"  />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/telefono"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="-7dp"
+        android:text="Ingrese su Numero Telefonico"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/telefono"
+        android:layout_width="386dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titulo6"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/btn_verde"
+        android:drawableLeft="@drawable/ic_baseline_local_phone_24"
+        android:drawablePadding="20dp"
+        android:hint="Insertar Numero Telefonico"
+        android:padding="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/telefono"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:text="Ingrese su Direccion"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/Direccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/telefono"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/btn_verde"
+        android:drawablePadding="20dp"
+        android:hint="Insertar Direccion"
+        android:padding="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Direccion"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:text="Ingrese una Referencia del lugar"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/Referencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Direccion"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:drawablePadding="20dp"
+        android:hint="Insertar Referencia"
+        android:background="@drawable/btn_verde"
+        android:padding="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Referencia"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+
+        android:text="Ingrese Material a Reciclar"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/Material"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Referencia"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/btn_verde"
+        android:drawablePadding="20dp"
+        android:hint="Insertar Material"
+        android:padding="20dp" />
+
+
+    <Button
+        android:id="@+id/btnAgregar"
+        android:layout_width="164dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Material"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="12sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn_verde"
+        android:text="Enviar Informacion"
+        android:textSize="13dp"/>
+
+    <Button
+        android:id="@+id/btnAtras"
+        android:layout_width="164dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btnAgregar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="12sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn_verde"
+        android:text="Retroceder"
+        android:textSize="13dp"/>
+
+
+</RelativeLayout>
+
